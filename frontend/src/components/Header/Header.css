@@ -1,0 +1,63 @@
+/* Header.css */
+.header {
+    height: 34vw;
+    margin: 0;
+    background: url('/B_PLATO.png') no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.header-contents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 2vw;
+    animation: fadeIn 3s;
+}
+
+.header-contents h2 {
+    font-weight: 300;
+    color: rgb(243, 239, 9);
+    font-size: max(4.5vw, 22px);
+}
+
+.header-contents p {
+    color: rgb(252, 252, 245);
+    font-size: 0.90vw;
+    text-align:left /* Justifica el texto */
+}
+
+.header-contents button {
+    border: none;
+    color: #747474;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background: white;
+    font-size: max(1vw, 13px);
+    border-radius: 50px;
+    margin-top: 1.5vw; /* Ajuste para mover el botón más abajo */
+}
+
+@media (max-width:1050px) {
+    .header{
+        height: 38vw;
+    }
+    .header-contents{
+        max-width: 45%;
+    }
+}
+@media(max-width:750px){
+    .header-contents{
+        max-width: 55%;
+    }
+    .header-contents p{
+       display: none;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
+}
